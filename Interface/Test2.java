@@ -1,0 +1,31 @@
+interface Test
+{
+	void meth();
+	void meth2();
+}
+interface Test1 extends Test
+{
+	void meth3();
+}
+class My implements Test1
+{
+	public void meth(){
+		System.out.println("meth avilible");
+	}
+	public void meth2(){
+		System.out.println("meth2 avilible");
+	}
+	public void meth3(){
+		System.out.println("meth3 avilible");
+	}
+
+}
+class Test2
+{
+	public static void main(String[]args){
+		Test1 m=new My();
+		m.meth();
+		m.meth2();
+		m.meth3();
+	}
+}

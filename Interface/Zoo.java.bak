@@ -1,0 +1,30 @@
+interface Animal
+{
+  void eat();
+  void sleep();
+}
+class Lion implements Animal
+{
+	void eat(){
+		System.out.println("Lion eats meet");
+	}
+	void sleep(){
+         System.out.println("Lion sleeps 8 hours in a day ");
+	}
+
+}
+  class Zoo extends Lion
+  {
+	  public eat();
+	  public sleep();
+
+  }
+
+public static void main(String[] args) 
+	{
+		Animal A=new Zoo();
+		A.eat();
+		A.sleep();
+		System.out.println("Hello World!");
+	}
+}

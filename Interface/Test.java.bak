@@ -1,0 +1,55 @@
+interface Dell
+{
+	void fingerprint();
+	void facelocker();
+	//void pinlock();
+}
+interface Hp
+{
+	void password();
+	void pattern();
+}
+ class Lenova implements Dell,Hp
+{
+  public void fingerprint(){
+	   System.out.println("Fingerprint availible");
+   }
+	public void facelocker(){
+		System.out.println("Facelocker availible");
+	}
+	public void password(){
+		System.out.println("password availible");
+	}
+
+	public void pattern(){
+		System.out.println("pattern availible");
+	}
+public void pinlock(){
+		System.out.println("pinlock availible");
+	}
+
+}
+class Acer extends Lenova
+{
+	public void pinlock(){
+		System.out.println("pinlock not availible");
+	}
+}
+class Apple extends Lenova
+{
+	void voiclock(){
+		System.out.println("voicelock availible");
+	}
+}
+class Test
+{
+	public static void main(String[]args){
+		Apple l=new Apple();
+		l.fingerprint();
+		l.facelocker();
+		l.password();
+		l.pattern();
+		l.pinlock();
+		l.voiclock();
+	}
+}
