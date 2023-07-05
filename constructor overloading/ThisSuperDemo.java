@@ -1,0 +1,42 @@
+class SuperClass 
+{
+	SuperClass(){
+		this(10);
+        System.out.println("Super no-arg");
+	}
+	SuperClass(int a){
+		this("abc");
+		System.out.println("Super int-arg");
+	}
+	SuperClass(String s){
+		System.out.println("Super String-arg");
+	}
+}
+class SubClass extends SuperClass
+{
+  SubClass(){
+		this(10);
+        System.out.println("Subclass no-arg");
+	}
+	SubClass(int a){
+		this("abc");
+		System.out.println("Subclass int-arg");
+	}
+	SubClass(String s){
+		System.out.println("Subclass String-arg");
+	}
+}
+class ThisSuperDemo
+{
+	public static void main(String[] args) 
+	{
+		//SuperClass s=new SubClass();
+		//System.out.println();
+		SuperClass s=new SubClass(10);
+		//System.out.println();
+		//new SubClass("abc");
+
+
+		//System.out.println("Hello World!");
+	}
+}

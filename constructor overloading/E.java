@@ -1,0 +1,13 @@
+class E 
+{
+	E(double d){
+		System.out.println("gm");
+	}
+
+	public static void main(String[] args) 
+	{
+		E e=new E("10");
+
+		System.out.println("Hello World!");
+	}
+}

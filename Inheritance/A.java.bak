@@ -1,0 +1,8 @@
+class A  
+{
+	static int b=10;
+	static {
+		System.out.println("Hi");
+	}
+	
+}

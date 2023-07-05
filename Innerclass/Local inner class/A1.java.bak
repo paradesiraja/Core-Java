@@ -1,0 +1,28 @@
+class A1 
+{
+	 void m1(){
+		//B b=new B();
+		class B
+		{
+			int x=10;
+		}
+		B b2=new B();
+		System.out.println(b2.x);
+	}
+	static void m2(){
+		//B b=new B();
+		class C
+		{
+			int x=20;
+		}
+		
+         C a=new C();
+		System.out.println(a.x);
+	}
+	public static void main(String[] args) 
+	{
+		m2();
+		m1();
+		
+	}
+}

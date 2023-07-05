@@ -1,0 +1,20 @@
+class  Raja
+{
+	Raja m1(){
+		class Brahma{
+			void m2(){
+				System.out.println("R");
+			}
+		}
+			Brahma r=new Brahma();
+			m3(r);
+			return r;
+		}
+	
+   void m3(Raja r){
+	   r.m2();
+   }
+}
+
+
+	

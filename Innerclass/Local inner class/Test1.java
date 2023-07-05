@@ -1,0 +1,13 @@
+class Test1 
+{
+	public static void main(String[] args) 
+	{
+		A a=new A();
+        a.m1();
+
+		//Example e=a.m1();
+		//e.m3();
+
+		//System.out.println("Hello World!");
+	}
+}
