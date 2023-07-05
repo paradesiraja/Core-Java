@@ -1,0 +1,10 @@
+class  Example
+{
+	public static void main(String[] args) 
+	{
+		Integer i1=50;      
+		//int i=i1;
+
+		System.out.println(i1);
+	}
+}
